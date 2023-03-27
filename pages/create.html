@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Crear Productos</title>
+  <title>Crear Productos | Funkoshop</title>
   <link rel="stylesheet" href="../css/styles.css">
 </head>
 
@@ -22,80 +22,89 @@
       <a href="#salir">SALIR</a>
     </nav>
   </header>
+
   <main class="container">
     <!-- CREAR NUEVO ITEM -->
-    <h2>CREAR NUEVO ITEM</h2>
+    <h3>CREAR NUEVO ITEM</h3>
     <form action="post">
-      <div>
+      <section>
         <label for="categorias">Categoria: </label>
         <select name="categorias" id="categorias">
-          <option value=""></option>
+          <option value="" selected disabled hidden>Seleccionar</option>
           <option value="1">Categoria 1</option>
           <option value="2">Categoria 2</option>
           <option value="3">Categoria 3</option>
         </select>
         <label for="licencias">Licencia: </label>
         <select name="licencias" id="licencias">
-          <option value=""></option>
+          <option value="" selected disabled hidden>Seleccionar</option>
           <option value="1">Licencia 1</option>
           <option value="2">Licencia 2</option>
           <option value="3">Licencia 3</option>
         </select>
-      </div>
-      <div>
+      </section>
+      <section>
         <label for="nombre_prod">Nombre del Producto: </label>
         <input type="text" name="nombre_prod" id="nombre_prod">
-      </div>
+      </section>
       <input type="text" name="descripcion_prod" id="descripcion_prod" placeholder="Descricion del Producto">
-      <div>
-        <label for="sku-code">SKU: </label>
-        <input type="text" name="sku-code" id="sku-code">
-        <label for="price">Precio: </label>
-        <input type="text" name="price" id="price">
-        <label for="stock">Stock: </label>
-        <input type="text" name="stock" id="stock">
-      </div>
-      <div>
-        <label for="descuento">Descuento: </label>
-        <input type="text" name="descuento" id="descuento">
-        <label for="cuotas">Cuotas: </label>
-        <select name="cuotas" id="cuotas">
-          <option value=""></option>
-          <option value="1">1 cuota</option>
-          <option value="2">3 cuotas</option>
-          <option value="3">6 cuotas</option>
-        </select>
-      </div>
-      <div>
+      <section>
+        <div>
+          <label for="sku-code">SKU: </label>
+          <input type="text" name="sku-code" id="sku-code" placeholder="SSK111AB001">
+          <label for="price">Precio: </label>
+          <input type="text" name="price" id="price" placeholder='$ 0.000,00'>
+          <label for="stock">Stock: </label>
+          <input type="text" name="stock" id="stock" placeholder='0'>
+        </div>
+        <div>
+          <label for="descuento">Descuento: </label>
+          <input type="text" name="descuento" id="descuento" placeholder="0%">
+          <label for="cuotas">Cuotas: </label>
+          <select name="cuotas" id="cuotas">
+            <option value="" selected disabled hidden>Seleccionar</option>
+            <option value="1">1 cuota</option>
+            <option value="2">3 cuotas</option>
+            <option value="3">6 cuotas</option>
+          </select>
+        </div>
+      </section>
+      <section>
         <label for="archivo">Imagenes: </label>
         <input type="file" name="imagen" id="imagen" placeholder="Elejir Archivo">
-      </div>
-      <div>
+      </section>
+      <section>
         <button type="submit">Agregar Producto</button>
         <button type="submit">Limpiar</button>
-      </div>
+      </section>
     </form>
   </main>
+
   <footer>
-    <nav>
-      <ul>
-        <li>
-          <a href="shop.html">SHOP</a>
-        </li>
-        <li>
-          <a href="#registrarse">REGISTRARSE</a>
-        </li>
-        <li>
-          <a href="#ingresar">INGRESAR</a>
-        </li>
-        <li>
-          <a href="#contacto">CONTACTO</a>
-          </a>
-        </li>
-      </ul>
-      <img src="../img/branding/isotype.svg" alt="Logotipo de Funkoshopp">
+    <section>
+      <nav>
+        <ul>
+          <li>
+            <a href="./shop.html">SHOP</a>
+          </li>
+          <li>
+            <a href="./register.html">REGISTRARSE</a>
+          </li>
+          <li>
+            <a href="./login.html">INGRESAR</a>
+          </li>
+          <li>
+            <a href="./contact.html">CONTACTO</a>
+          </li>
+        </ul>
+      </nav>
+      <picture>
+        <img src="../img/branding/isotype.svg" alt="Logotipo de Funkoshopp">
+      </picture>
+    </section>
+    <section>
       <p>All rights reserved 2022 - Funkoshop &copy;</p>
-    </nav>
+    </section>
   </footer>
 </body>
 

@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Registro</title>
+  <title>Logon | Funkoshop</title>
   <link rel="stylesheet" href="../css/styles.css">
 </head>
 
@@ -22,61 +22,72 @@
       <a href="#salir">SALIR</a>
     </nav>
   </header>
+
   <main class="container">
     <!-- REGISTRO CUENTA -->
+    <h3>CREA TU CUENTA</h3>
+    <p>Completa el formulario para ser parte del mundo de los Funkos</p>
     <form action="post">
-      <h2>CREA TU CUENTA</h2>
-      <p>Completa el formulario para ser parte del mundo de los Funkos</p>
-      <div>
-        <label for="nombre_usuario">Nombre: </label>
-        <input type="text" name="nombre_usuario" id="nombre_usuario" placeholder="John">
-      </div>
-      <div>
-        <label for="apellido_usuario">Apellido: </label>
-        <input type="text" name="apellido_usuario" id="apellido_usuario" placeholder="Doe">
-      </div>
-      <div>
-        <label for="email_usuario">Email: </label>
-        <input type="email" name="email_usuario" id="email_usuario" placeholder="johndoe@mail.com">
-      </div>
-      <div>
-        <label for="password">Contraseña: </label>
-        <input type="password" name="password" id="password" value="FakePSW">
-      </div>
-      <div>
-        <label for="buscar">Repita Contraseña: </label>
-        <input type="password" name="password" id="password" value="FakePSW">
-      </div>
-      <div>
+      <section>
+        <div>
+          <label for="nombre_usuario">Nombre: </label>
+          <input type="text" name="nombre_usuario" id="nombre_usuario" placeholder="John">
+        </div>
+        <div>
+          <label for="apellido_usuario">Apellido: </label>
+          <input type="text" name="apellido_usuario" id="apellido_usuario" placeholder="Doe">
+        </div>
+        <div>
+          <label for="email_usuario">Email: </label>
+          <input type="email" name="email_usuario" id="email_usuario" placeholder="johndoe@mail.com">
+        </div>
+        <div>
+          <label for="password">Contraseña: </label>
+          <input type="password" name="password" id="password" value="FakePSW">
+        </div>
+        <div>
+          <label for="buscar">Repita Contraseña: </label>
+          <input type="password" name="password" id="password" value="FakePSW">
+        </div>
+      </section>
+      <section>
         <div>
           <input type="submit" value="Registrar">
           <input type="checkbox" id="check" name="check">
+        </div>
+        <div>
           <label for="checkbox">Acepto </label>
           <a href="#terms">Términos y Condiciones</a>
         </div>
-      </div>
+      </section>
     </form>
   </main>
+
   <footer>
-    <nav>
-      <ul>
-        <li>
-          <a href="shop.html">SHOP</a>
-        </li>
-        <li>
-          <a href="./register.html">REGISTRARSE</a>
-        </li>
-        <li>
-          <a href="./login.html">INGRESAR</a>
-        </li>
-        <li>
-          <a href="#contacto">CONTACTO</a>
-          </a>
-        </li>
-      </ul>
-      <img src="../img/branding/isotype.svg" alt="Logotipo de Funkoshopp">
+    <section>
+      <nav>
+        <ul>
+          <li>
+            <a href="./shop.html">SHOP</a>
+          </li>
+          <li>
+            <a href="./register.html">REGISTRARSE</a>
+          </li>
+          <li>
+            <a href="./login.html">INGRESAR</a>
+          </li>
+          <li>
+            <a href="./contact.html">CONTACTO</a>
+          </li>
+        </ul>
+      </nav>
+      <picture>
+        <img src="../img/branding/isotype.svg" alt="Logotipo de Funkoshopp">
+      </picture>
+    </section>
+    <section>
       <p>All rights reserved 2022 - Funkoshop &copy;</p>
-    </nav>
+    </section>
   </footer>
 </body>
 

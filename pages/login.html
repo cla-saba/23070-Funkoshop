@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login</title>
+  <title>Login | Funkoshop</title>
   <link rel="stylesheet" href="../css/styles.css">
 </head>
 
@@ -22,34 +22,55 @@
       <a href="#salir">SALIR</a>
     </nav>
   </header>
+
   <main class="container">
-    <h2>INGRESAR A MI CUENTA</h2>
     <!-- FORMULARIO INGRESO -->
+    <h3>INGRESAR A MI CUENTA</h3>
     <form action="post">
-      <div>
-        <label for="email">Email: </label>
-        <input type="email" name="email" id="email" placeholder="johndoe@correo.com" required>
-      </div>
-      <div>
-        <label for="password">Contraseña: </label>
-        <input type="password" name="password" id="password" value="FakePSW">
-      </div>
-      <div>
+      <section>
+        <div>
+          <label for="email">Email: </label>
+          <input type="email" name="email" id="email" placeholder="johndoe@correo.com" required>
+        </div>
+        <div>
+          <label for="password">Contraseña: </label>
+          <input type="password" name="password" id="password" value="FakePSW">
+        </div>
+      </section>
+      <section>
         <input type="submit" value="Ingresar">
         <input type="checkbox" id="check" name="check" value="Recordarme">
         <label for="checkbox">Recordarme</label>
-      </div>
-      <a href="#">Olvide mi Contraseña</a>
+      </section>
+      <a href="#reset password">Olvide mi Contraseña</a>
     </form>
-
-    <div>
-    </div>
   </main>
+
   <footer>
-    <nav>
-      <img src="../img/branding/isotype.svg" alt="Logotipo de Funkoshopp">
+    <section>
+      <nav>
+        <ul>
+          <li>
+            <a href="./shop.html">SHOP</a>
+          </li>
+          <li>
+            <a href="./register.html">REGISTRARSE</a>
+          </li>
+          <li>
+            <a href="./login.html">INGRESAR</a>
+          </li>
+          <li>
+            <a href="./contact.html">CONTACTO</a>
+          </li>
+        </ul>
+      </nav>
+      <picture>
+        <img src="../img/branding/isotype.svg" alt="Logotipo de Funkoshopp">
+      </picture>
+    </section>
+    <section>
       <p>All rights reserved 2022 - Funkoshop &copy;</p>
-    </nav>
+    </section>
   </footer>
 </body>
 
