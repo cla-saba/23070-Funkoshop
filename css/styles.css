@@ -96,6 +96,28 @@ header {
   height: 20vw;
 }
 
+.pagination-container {
+  margin: 20px 30%;
+}
+
+.pagination {
+  display: inline-block;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+ul.pagination a:hover {
+  color: #ffffff;
+  background-color: #30343f;
+  border-radius: 10%;
+  transition: background-color 0.3s;
+}
+
 /*
 .group1 {
   display: flex;
