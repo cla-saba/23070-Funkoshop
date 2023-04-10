@@ -11,26 +11,36 @@
 
 <body>
   <header>
-    <nav class="nav-header">
-      <h1>
-        <picture>
-          <a href="index.html">
-            <img src="./img/branding/logo_light_horizontal.svg" alt="Logotipo de Funkoshop">
-          </a>
-        </picture>
-      </h1>
-      <ul>
-        <li>
-          <a href="pages/shop.html">SHOP</a>
+    <nav class="navbar container">
+      <picture class="navbar__logo">
+        <a href="index.html">
+          <img src="./img/branding/logo_light_horizontal.svg" alt="Logotipo de Funkoshop">
+        </a>
+      </picture>
+      <ul class="navbar__menu">
+        <li class="navbar__item with-submenu">
+          <a class="navbar__link with-icon" href="./pages/shop/shop.html">SHOP <iconify-icon
+              icon="tabler:chevron-down"></iconify-icon></a>
+          <ul class="submenu">
+            <li class="submenu__item">
+              <a href="" class="submenu__link">Funkos</a>
+            </li>
+            <li class="submenu__item">
+              <a href="" class="submenu__link">Remeras</a>
+            </li>
+            <li class="submenu__item">
+              <a href="" class="submenu__link">Llaveros</a>
+            </li>
+          </ul>
         </li>
-        <li>
-          <a href="./pages/contact.html">CONTACTO</a>
+        <li class="navbar__item">
+          <a class="navbar__link" href="./pages/admin/contact.html">CONTACTO</a>
         </li>
-        <li>
-          <a href="./pages/login.html">LOGIN</a>
+        <li class="navbar__item">
+          <a class="navbar__link" href="./pages/admin/login.html">LOGIN</a>
         </li>
-        <li>
-          <a href="./pages/cart.html">
+        <li class="navbar__item">
+          <a class="navbar__cart" href="./pages/shop/cart.html">
             <img src="./img/icons/cart-icon.svg" alt="icono carrito">
           </a>
         </li>
@@ -44,15 +54,19 @@
       <article>
         <h3>Nuevos Ingresos</h3>
         <p>Descubrí el próximo Funko Pop de tu colección</p>
-        <a class='btnshop' href="./pages/shop.html">SHOP</a>
+        <a class='btnshop' href="./pages/shop/shop.html">SHOP</a>
       </article>
     </section>
     <!-- LISTA PRODUCTOS -->
-    <div class="container">
+    <div>
       <section>
-        <h3>Star Wars & The Mandalorian</h3>
-        <p>Disfruta de una saga que sigue agregando personajes a su colección.</p>
-        <a href="./pages/shop.html">VER COLECCIÓN</a>
+        <article>
+          <h3>Star Wars &</h3>
+          <h3>The Mandalorian</h3>
+          <p>Disfruta de una saga que sigue</p>
+          <p>agregando personajes a su colección.</p>
+          <a href="./pages/shop/shop.html">VER COLECCIÓN</a>
+        </article>
         <picture>
           <img src="./img/star-wars/baby-yoda-1.webp" alt="baby-yoda">
         </picture>
@@ -60,8 +74,9 @@
       <section>
         <article>
           <h3>POKEMON INDIGO</h3>
-          <p>Atrapa todos los que puedas y disfruta de una colección llena de amigos.</p>
-          <a href="./pages/shop.html">VER COLECCIÓN</a>
+          <p>Atrapa todos los que puedas y disfruta</p>
+          <p>de una colección llena de amigos.</p>
+          <a href="./pages/shop/shop.html">VER COLECCIÓN</a>
         </article>
         <picture>
           <img src="./img/pokemon/vulpix-1.webp" alt="vulpix">
@@ -70,8 +85,9 @@
       <section>
         <article>
           <h3>HARRY POTTER</h3>
-          <p>Revive los recuerdos de una saga llena de magia y encanto.</p>
-          <a href="./pages/shop.html">VER COLECCIÓN</a>
+          <p>Revive los recuerdos de una saga llena</p>
+          <p>de magia y encanto.</p>
+          <a href="./pages/shop/shop.html">VER COLECCIÓN</a>
         </article>
         <picture>
           <img src="./img/harry-potter/snape-patronus-1.webp" alt="Trooper">
@@ -83,7 +99,7 @@
         <ul>
           <li>
             <article>
-              <a href="./pages/item.html">
+              <a href="./pages/shop/item.html">
                 <p>NUEVO</p>
                 <picture>
                   <img src="./img/star-wars/trooper-1.webp" alt="Trooper">
@@ -99,7 +115,7 @@
           </li>
           <li>
             <article>
-              <a href="./pages/item.html">
+              <a href="./pages/shop/item.html">
                 <p>NUEVO</p>
                 <picture>
                   <img src="./img/pokemon/pidgeotto-1.webp" alt="pidgeotto">
@@ -115,7 +131,7 @@
           </li>
           <li>
             <article>
-              <a href="./pages/item.html">
+              <a href="./pages/shop/item.html">
                 <p>NUEVO</p>
                 <picture>
                   <img src="./img/harry-potter/luna-1.webp" alt="luna">
@@ -136,10 +152,10 @@
 
   <footer>
     <section>
-      <nav>
+      <nav class="nav-footer-container">
         <ul>
           <li>
-            <a href="./pages/shop.html">SHOP</a>
+            <a href="./pages/shop/shop.html">SHOP</a>
           </li>
           <li>
             <a href="./pages/register.html">REGISTRARSE</a>
@@ -160,6 +176,7 @@
       <p>All rights reserved 2022 - Funkoshop &copy;</p>
     </section>
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script>
 </body>
 
 </html>

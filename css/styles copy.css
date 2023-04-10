@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap");
+
+:root {
+  /* Palette */
+  --prymary-solid: #ff3333;
+  --prymary-900: rgba(255, 51, 51, 0.9);
+  --prymary-500: rgba(255, 51, 51, 0.5);
+  --prymary-300: rgba(255, 51, 51, 0.3);
+
+  --secondary-solid: #1d84b5;
+  --secondary-900: rgba(29, 132, 181, 0.9);
+  --secondary-500: rgba(29, 132, 181, 0.5);
+  --secondary-300: rgba(29, 132, 181, 0.3);
+
+  --dark-solid: #1f1f1f;
+  --dark-900: rgba(31, 31, 31, 0.9);
+  --dark-500: rgba(31, 31, 31, 0.5);
+  --dark-300: rgba(31, 31, 31, 0.3);
+
+  --dark-bg-solid: #30343f;
+  --light-bg-solid: #fafaff;
+
+  --light-font-solid: #ffffff;
+
+  /* Typography */
+  --base-font: "Inter", sans-serif;
+  --secondary-font: "Raleway", sans-serif;
+
+  /* Font-sizes */
+  --font-display: 4.6em;
+  --font-jumbo: 3.8em;
+  --font-xlarge: 3em;
+  --font-large: 2.4em;
+  --font-medium: 1.8em;
+  --font-small: 1.6em;
+  --font-xsmall: 1.2em;
+
+  /* Spacings */
+  --spacing-128: 12.8rem;
+  --spacing-68: 6.8rem;
+  --spacing-36: 3.6rem;
+  --spacing-28: 2.8rem;
+  --spacing-16: 1.6rem;
+  --spacing-12: 1.2rem;
+  --spacing-8: 0.8rem;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: var(--base-font);
+  font-size: 62.5%;
+  color: var(--dark-solid);
+  background-color: var(--light-bg-solid);
+}
+
+header,
+footer {
+  font-family: var(--secondary-solid);
+  color: var(--light-font-solid);
+  background-color: var(--dark-bg-solid);
+}
+
+.nav-header {
+  display: flex;
+  height: 144px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+picture a img {
+  width: 40rem;
+  padding-left: 5rem;
+}
+
+nav ul {
+  font-weight: 100;
+  font-size: var(--font-medium);
+  display: flex;
+  align-items: center;
+}
+
+nav ul li {
+  padding-left: 0;
+  padding-right: 5rem;
+}
+
+a {
+  text-decoration: none;
+  font-family: inherit;
+  color: inherit;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+header {
+  height: 144px;
+}
+
+.container {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.banner {
+  background-image: url("../img/funkos-banner.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: -400px;
+  width: 100vw;
+  height: 320px;
+}
+
+.pagination-container {
+  margin: 20px 30%;
+}
+
+.pagination {
+  display: inline-block;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+ul.pagination a:hover {
+  color: #ffffff;
+  background-color: #30343f;
+  border-radius: 10%;
+  transition: background-color 0.3s;
+}
+
+.container section {
+  display: flex;
+}
+
+.container section article {
+  display: flex;
+  flex-direction: column;
+}
+
+.container section:nth-of-type(even) {
+  flex-direction: row-reverse;
+}
+
+.container section article h3 {
+  font-family: "Raleway";
+  text-transform: uppercase;
+  font-size: var(--font-display);
+  font-weight: var(--dark-500);
+  line-height: 54px;
+  color: #111111;
+}
+.container section article p {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: var(--dark-400);
+  font-size: var(--font-large);
+  line-height: 28px;
+  color: #4f4f4f;
+}
+
+/*
+.group1 {
+  display: flex;
+  align-items: center;
+}
+
+.btnshop {
+  background-color: var(--light-font-solid);
+  color: var(--dark-solid);
+  font-size: var(--font-small);
+  padding: 0.5rem var(--spacing-68);
+  border-radius: 15px;
+}
+
+.agregar-quitar,
+.inline {
+  display: flex;
+}
+ */
+
+picture img,
+article img {
+  width: 60rem;
+}

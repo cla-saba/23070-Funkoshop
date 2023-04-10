@@ -14,8 +14,8 @@
     <nav class="nav-header">
       <h1>
         <picture>
-          <a href="../index.html">
-            <img src="../img/branding/logo_light_horizontal.svg" alt="Logotipo de Funkoshop">
+          <a href="../../index.html">
+            <img src="../../img/branding/logo_light_horizontal.svg" alt="Logotipo de Funkoshop">
           </a>
         </picture>
       </h1>
@@ -24,14 +24,14 @@
           <a href="./shop.html">SHOP</a>
         </li>
         <li>
-          <a href="./contact.html">CONTACTO</a>
+          <a href="../admin/contact.html">CONTACTO</a>
         </li>
         <li>
-          <a href="./login.html">LOGIN</a>
+          <a href="../admin/login.html">LOGIN</a>
         </li>
         <li>
           <a href="./cart.html">
-            <img src="../img/icons/cart-icon.svg" alt="Icono cart">
+            <img src="../../img/icons/cart-icon.svg" alt="Icono cart">
           </a>
         </li>
       </ul>
@@ -40,26 +40,28 @@
 
   <aside>
     <!-- BUSCADOR -->
-    <form action="post">
-      <section>
+    <div>
+      <div>
         <label for="buscar">BUSCAR </label>
         <input type="text" name="buscar" id="buscar" placeholder="item o categoria" required>
-      </section>
-      <section>
+      </div>
+      <div>
         <label for="ordenar">ORDENAR POR</label>
         <select name="ordenar" id="ordenar" placeholder="item o categoria">
           <option value=""></option>
-          <option value="1">Menor a Mayor</option>
-          <option value="2">Mayor a Menor</option>
+          <option value="1">A a Z</option>
+          <option value="2">Z a A</option>
+          <option value="2">Menor Precio</option>
+          <option value="2">Mayor Precio</option>
         </select>
-      </section>
-      <section>
-        <label for="precio">PRECIO</label>
+      </div>
+      <div>
+        <p for="precio">PRECIO</p>
         <label for="minimo">MIN</label>
         <input type="text" name="minimo" id="minimo" placeholder="0" required>
         <label for="maximo">MAX</label>
         <input type="text" name="maximo" id="maximo" placeholder="0" required>
-      </section>
+      </div>
       <div>
         <label for="filtrar">FILTRAR</label>
         <input type="checkbox" id="nuevos" name="nuevos">
@@ -71,7 +73,7 @@
         <input type="checkbox" id="favoritos" name="favoritos">
         <label for="favoritos">FAVORITOS</label>
       </div>
-    </form>
+    </div>
   </aside>
 
   <main class="container">
@@ -248,21 +250,21 @@
       <nav>
         <ul>
           <li>
-            <a href="./shop.html">SHOP</a>
+            <a href="./shop/shop.html">SHOP</a>
           </li>
           <li>
-            <a href="./register.html">REGISTRARSE</a>
+            <a href="./admin/register.html">REGISTRARSE</a>
           </li>
           <li>
-            <a href="./login.html">INGRESAR</a>
+            <a href="./admin/login.html">INGRESAR</a>
           </li>
           <li>
-            <a href="./contact.html">CONTACTO</a>
+            <a href="./admin/contact.html">CONTACTO</a>
           </li>
         </ul>
       </nav>
       <picture>
-        <img src="../img/branding/isotype.svg" alt="Logotipo de Funkoshopp">
+        <img src="../../img/branding/isotype.svg" alt="Logotipo de Funkoshopp">
       </picture>
     </section>
     <section>
