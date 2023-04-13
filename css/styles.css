@@ -93,6 +93,7 @@ img {
 }
 
 /* HEADER */
+
 header {
   background-color: var(--dark-bg-solid);
   padding: var(--spacing-36);
@@ -156,6 +157,7 @@ header {
 }
 
 /* HERO */
+
 .hero {
   background-image: url(../img/funkos-banner.webp);
   padding: var(--spacing-128);

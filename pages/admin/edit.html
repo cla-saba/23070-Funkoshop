@@ -6,20 +6,18 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Editar Item | Funkoshop</title>
-  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../../css/styles.css">
 </head>
 
 <body>
   <header>
-    <nav class="nav">
-      <h1>
-        <picture>
-          <a href="/">
-            <img src="../img/branding/logo_light_horizontal.svg" alt="Logotipo de Funkoshop">
-          </a>
-        </picture>
-      </h1>
-      <a href="#salir">SALIR</a>
+    <nav class="navbar container">
+      <picture class="navbar__logo">
+        <a href="/">
+          <img src="../../img/branding/logo_light_horizontal.svg" alt="Logotipo de Funkoshop">
+        </a>
+      </picture>
+      <a class="navbar__link with-icon" href="#salir">SALIR</a>
     </nav>
   </header>
 
@@ -75,11 +73,11 @@
       </section>
       <section>
         <div>
-          <img src="../img/star-wars/baby-yoda-1.webp" alt="baby-yoda" style="width: 200px;">
+          <img src="../../img/star-wars/baby-yoda-1.webp" alt="baby-yoda" style="width: 200px;">
           <span>Frente</span>
         </div>
         <div>
-          <img src="../img/star-wars/baby-yoda-box.webp" alt="baby-yoda-box" style="width: 200px;">
+          <img src="../../img/star-wars/baby-yoda-box.webp" alt="baby-yoda-box" style="width: 200px;">
           <span>Dorso</span>
         </div>
       </section>
@@ -89,31 +87,27 @@
     </form>
   </main>
 
-  <footer>
-    <section>
-      <nav>
-        <ul>
-          <li>
-            <a href="./shop.html">SHOP</a>
-          </li>
-          <li>
-            <a href="./register.html">REGISTRARSE</a>
-          </li>
-          <li>
-            <a href="./login.html">INGRESAR</a>
-          </li>
-          <li>
-            <a href="./contact.html">CONTACTO</a>
-          </li>
-        </ul>
-      </nav>
+  <footer class="footer">
+    <nav class="navbar container">
+      <ul class="navbar__item">
+        <li class="navbar__item">
+          <a class="navbar__link" href="./shop.html">SHOP</a>
+        </li>
+        <li class="navbar__item">
+          <a class="navbar__link" href="../admin/register.html">REGISTRARSE</a>
+        </li>
+        <li class="navbar__item">
+          <a class="navbar__link" href="../admin/login.html">INGRESAR</a>
+        </li>
+        <li class="navbar__item">
+          <a class="navbar__link" href="../admin/contact.html">CONTACTO</a>
+        </li>
+      </ul>
       <picture>
-        <img src="../img/branding/isotype.svg" alt="Logotipo de Funkoshopp">
+        <img src="../../img/branding/isotype.svg" alt="Logotipo de Funkoshopp">
       </picture>
-    </section>
-    <section>
-      <p>All rights reserved 2022 - Funkoshop &copy;</p>
-    </section>
+    </nav>
+    <p class="footer__copy">All rights reserved 2022 - Funkoshop &copy;</p>
   </footer>
 </body>
 
