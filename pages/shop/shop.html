@@ -48,208 +48,222 @@
     </nav>
   </header>
 
-  <aside>
-    <!-- BUSCADOR -->
-    <div>
-      <div>
-        <label for="buscar">BUSCAR </label>
-        <input type="text" name="buscar" id="buscar" placeholder="item o categoria" required>
-      </div>
-      <div>
-        <label for="ordenar">ORDENAR POR</label>
-        <select name="ordenar" id="ordenar" placeholder="item o categoria">
-          <option value=""></option>
-          <option value="1">A a Z</option>
-          <option value="2">Z a A</option>
-          <option value="2">Menor Precio</option>
-          <option value="2">Mayor Precio</option>
-        </select>
-      </div>
-      <div>
-        <p for="precio">PRECIO</p>
-        <label for="minimo">MIN</label>
-        <input type="text" name="minimo" id="minimo" placeholder="0" required>
-        <label for="maximo">MAX</label>
-        <input type="text" name="maximo" id="maximo" placeholder="0" required>
-      </div>
-      <div>
-        <label for="filtrar">FILTRAR</label>
-        <input type="checkbox" id="nuevos" name="nuevos">
-        <label for="nuevos">NUEVOS</label>
-        <input type="checkbox" id="ofertas" name="ofertas">
-        <label for="ofertas">OFERTAS</label>
-        <input type="checkbox" id="especial" name="especial">
-        <label for="especial">EDICION ESPECIAL</label>
-        <input type="checkbox" id="favoritos" name="favoritos">
-        <label for="favoritos">FAVORITOS</label>
-      </div>
-    </div>
-  </aside>
+  <main>
+    <div class="main-container container">
+      <aside class="aside">
+        <!-- BUSCADOR -->
+        <div class="container">
+          <div>
+            <label for="buscar" class="aside-title">BUSCAR </label>
+            <input type="text" name="buscar" id="buscar" class="aside-buscar" placeholder="item o categoria" required>
+          </div>
+          <div>
+            <label for="ordenar" class="aside-title">ORDENAR POR</label>
+            <select name="ordenar" id="ordenar" class="aside-buscar">
+              <option value="1">Mayor Precio</option>
+              <option value="2">Menor Precio</option>
+              <option value="3">A a Z</option>
+              <option value="4">Z a A</option>
+            </select>
+          </div>
+          <p for="precio" class="aside-title">PRECIO</p>
+          <div class="precio-container">
+            <div>
+              <label for="minimo" class="precio-label">MIN</label>
+              <input type="text" name="minimo" id="minimo" class="precio-box" placeholder="0">
+            </div>
+            <div>
+              <label for="maximo" class="precio-label">-</label>
+              <label for="maximo" class="precio-label">MAX</label>
+              <input type="text" name="maximo" id="maximo" class="precio-box" placeholder="0">
+            </div>
+          </div>
+          <div class="filter-options">
+            <label for="filtrar" class="aside-title">FILTRAR</label>
+            <div class="filter">
+              <input type="checkbox" id="nuevos" name="nuevos">
+              <label for="nuevos">NUEVOS</label>
+            </div>
+            <div class="filter">
+              <input type="checkbox" id="ofertas" name="ofertas">
+              <label for="ofertas">OFERTAS</label>
+            </div>
+            <div class="filter">
+              <input type="checkbox" id="especial" name="especial">
+              <label for="especial">EDICION ESPECIAL</label>
+            </div>
+            <div class="filter">
+              <input type="checkbox" id="favoritos" name="favoritos">
+              <label for="favoritos">FAVORITOS</label>
+            </div>
+          </div>
+        </div>
+      </aside>
 
-  <main class="container">
-    <!-- LISTA PRODUCTOS -->
-    <section>
-      <ul>
-        <li>
-          <article>
-            <a href="./item.html">
-              <p>NUEVO</p>
-              <picture>
-                <img src="../../img/star-wars/trooper-1.webp" alt="Trooper">
-              </picture>
-              <div>
-                <p>Star Wars</p>
-                <h4>STORMTROOPER LIGHTSABER</h4>
-                <p>$1799,99.-</p>
-                <p>3 CUOTAS SIN INTERÉS</p>
-              </div>
-            </a>
-          </article>
-        </li>
-        <li>
-          <article>
-            <a href="./item.html">
-              <p>NUEVO</p>
-              <picture>
-                <img src="../../img/pokemon/pidgeotto-1.webp" alt="pidgeotto">
-              </picture>
-              <div>
-                <p>POKEMON</p>
-                <h4>PIDGEOTTO</h4>
-                <p>$1799,99.-</p>
-                <p>3 CUOTAS SIN INTERÉS</p>
-              </div>
-            </a>
-          </article>
-        </li>
-        <li>
-          <article>
-            <a href="./item.html">
-              <p>NUEVO</p>
-              <picture>
-                <img src="../../img/harry-potter/luna-1.webp" alt="luna">
-              </picture>
-              <div>
-                <p>HARRY POTTER</p>
-                <h4>LUNA LOVEGOOD LION MASK</h4>
-                <p>$1799,99.-</p>
-                <p>3 CUOTAS SIN INTERÉS</p>
-              </div>
-            </a>
-          </article>
-        </li>
-      </ul>
-      <ul>
-        <li>
-          <article>
-            <a href="./item.html">
-              <p>NUEVO</p>
-              <picture>
-                <img src="../../img/star-wars/trooper-1.webp" alt="Trooper">
-              </picture>
-              <div>
-                <p>Star Wars</p>
-                <h4>STORMTROOPER LIGHTSABER</h4>
-                <p>$1799,99.-</p>
-                <p>3 CUOTAS SIN INTERÉS</p>
-              </div>
-            </a>
-          </article>
-        </li>
-        <li>
-          <article>
-            <a href="./item.html">
-              <p>NUEVO</p>
-              <picture>
-                <img src="../../img/pokemon/pidgeotto-1.webp" alt="pidgeotto">
-              </picture>
-              <div>
-                <p>POKEMON</p>
-                <h4>PIDGEOTTO</h4>
-                <p>$1799,99.-</p>
-                <p>3 CUOTAS SIN INTERÉS</p>
-              </div>
-            </a>
-          </article>
-        </li>
-        <li>
-          <article>
-            <a href="./item.html">
-              <p>NUEVO</p>
-              <picture>
-                <img src="../../img/harry-potter/luna-1.webp" alt="luna">
-              </picture>
-              <div>
-                <p>HARRY POTTER</p>
-                <h4>LUNA LOVEGOOD LION MASK</h4>
-                <p>$1799,99.-</p>
-                <p>3 CUOTAS SIN INTERÉS</p>
-              </div>
-            </a>
-          </article>
-        </li>
-      </ul>
-      <ul>
-        <li>
-          <article>
-            <a href="./item.html">
-              <p>NUEVO</p>
-              <picture>
-                <img src="../../img/star-wars/trooper-1.webp" alt="Trooper">
-              </picture>
-              <div>
-                <p>Star Wars</p>
-                <h4>STORMTROOPER LIGHTSABER</h4>
-                <p>$1799,99.-</p>
-                <p>3 CUOTAS SIN INTERÉS</p>
-              </div>
-            </a>
-          </article>
-        </li>
-        <li>
-          <article>
-            <a href="./item.html">
-              <p>NUEVO</p>
-              <picture>
-                <img src="../../img/pokemon/pidgeotto-1.webp" alt="pidgeotto">
-              </picture>
-              <div>
-                <p>POKEMON</p>
-                <h4>PIDGEOTTO</h4>
-                <p>$1799,99.-</p>
-                <p>3 CUOTAS SIN INTERÉS</p>
-              </div>
-            </a>
-          </article>
-        </li>
-        <li>
-          <article>
-            <a href="./item.html">
-              <p>NUEVO</p>
-              <picture>
-                <img src="../../img/harry-potter/luna-1.webp" alt="luna">
-              </picture>
-              <div>
-                <p>HARRY POTTER</p>
-                <h4>LUNA LOVEGOOD LION MASK</h4>
-                <p>$1799,99.-</p>
-                <p>3 CUOTAS SIN INTERÉS</p>
-              </div>
-            </a>
-          </article>
-        </li>
-      </ul>
-    </section>
+      <!-- LISTA PRODUCTOS -->
+      <section class="slider container">
+        <ul class="slider__items">
+          <li class="slider__item">
+            <article class="card-item">
+              <a class="card-item__link" href="./item.html">
+                <picture class="card-item__cover">
+                  <span class="card-item__tag">Nuevo</span>
+                  <img src="../../img/star-wars/trooper-1.webp" alt="Figura coleccionable Funko de Trooper">
+                </picture>
+                <div class="card-item__content">
+                  <p class="card-item__license">Star Wars</p>
+                  <h4 class="card-item__name">STORMTROOPER LIGHTSABER</h4>
+                  <p class="card-item__price">$1799,99.-</p>
+                  <p class="card-item__promo">3 CUOTAS SIN INTERÉS</p>
+                </div>
+              </a>
+            </article>
+          </li>
+          <li class="slider__item">
+            <article class="card-item">
+              <a class="card-item__link" href="./item.html">
+                <picture class="card-item__cover">
+                  <span class="card-item__tag">Nuevo</span>
+                  <img src="../../img/pokemon/pidgeotto-1.webp" alt="Figura coleccionable Funko de Pidgeotto">
+                </picture>
+                <div class="card-item__content">
+                  <p class="card-item__license">POKEMON</p>
+                  <h4 class="card-item__name">PIDGEOTTO</h4>
+                  <p class="card-item__price">$1799,99.-</p>
+                  <p class="card-item__promo">3 CUOTAS SIN INTERÉS</p>
+                </div>
+              </a>
+            </article>
+          </li>
+          <li class="slider__item">
+            <article class="card-item">
+              <a class="card-item__link" href="./item.html">
+                <picture class="card-item__cover">
+                  <span class="card-item__tag">Nuevo</span>
+                  <img src="../../img/harry-potter/luna-1.webp" alt="Figura coleccionable Funko de Luna Lovegood">
+                </picture>
+                <div class="card-item__content">
+                  <p class="card-item__license">HARRY POTTER</p>
+                  <h4 class="card-item__name">LUNA LOVEGOOD LION MASK</h4>
+                  <p class="card-item__price">$1799,99.-</p>
+                  <p class="card-item__promo">3 CUOTAS SIN INTERÉS</p>
+                </div>
+              </a>
+            </article>
+          </li>
+        </ul>
+        <ul class="slider__items">
+          <li class="slider__item">
+            <article class="card-item">
+              <a class="card-item__link" href="./pages/shop/item.html">
+                <picture class="card-item__cover">
+                  <span class="card-item__tag">Nuevo</span>
+                  <img src="../../img/star-wars/trooper-1.webp" alt="Figura coleccionable Funko de Trooper">
+                </picture>
+                <div class="card-item__content">
+                  <p class="card-item__license">Star Wars</p>
+                  <h4 class="card-item__name">STORMTROOPER LIGHTSABER</h4>
+                  <p class="card-item__price">$1799,99.-</p>
+                  <p class="card-item__promo">3 CUOTAS SIN INTERÉS</p>
+                </div>
+              </a>
+            </article>
+          </li>
+          <li class="slider__item">
+            <article class="card-item">
+              <a class="card-item__link" href="./pages/shop/item.html">
+                <picture class="card-item__cover">
+                  <span class="card-item__tag">Nuevo</span>
+                  <img src="../../img/pokemon/pidgeotto-1.webp" alt="Figura coleccionable Funko de Pidgeotto">
+                </picture>
+                <div class="card-item__content">
+                  <p class="card-item__license">POKEMON</p>
+                  <h4 class="card-item__name">PIDGEOTTO</h4>
+                  <p class="card-item__price">$1799,99.-</p>
+                  <p class="card-item__promo">3 CUOTAS SIN INTERÉS</p>
+                </div>
+              </a>
+            </article>
+          </li>
+          <li class="slider__item">
+            <article class="card-item">
+              <a class="card-item__link" href="./pages/shop/item.html">
+                <picture class="card-item__cover">
+                  <span class="card-item__tag">Nuevo</span>
+                  <img src="../../img/harry-potter/luna-1.webp" alt="Figura coleccionable Funko de Luna Lovegood">
+                </picture>
+                <div class="card-item__content">
+                  <p class="card-item__license">HARRY POTTER</p>
+                  <h4 class="card-item__name">LUNA LOVEGOOD LION MASK</h4>
+                  <p class="card-item__price">$1799,99.-</p>
+                  <p class="card-item__promo">3 CUOTAS SIN INTERÉS</p>
+                </div>
+              </a>
+            </article>
+          </li>
+        </ul>
+        <ul class="slider__items">
+          <li class="slider__item">
+            <article class="card-item">
+              <a class="card-item__link" href="./pages/shop/item.html">
+                <picture class="card-item__cover">
+                  <span class="card-item__tag">Nuevo</span>
+                  <img src="../../img/star-wars/trooper-1.webp" alt="Figura coleccionable Funko de Trooper">
+                </picture>
+                <div class="card-item__content">
+                  <p class="card-item__license">Star Wars</p>
+                  <h4 class="card-item__name">STORMTROOPER LIGHTSABER</h4>
+                  <p class="card-item__price">$1799,99.-</p>
+                  <p class="card-item__promo">3 CUOTAS SIN INTERÉS</p>
+                </div>
+              </a>
+            </article>
+          </li>
+          <li class="slider__item">
+            <article class="card-item">
+              <a class="card-item__link" href="./pages/shop/item.html">
+                <picture class="card-item__cover">
+                  <span class="card-item__tag">Nuevo</span>
+                  <img src="../../img/pokemon/pidgeotto-1.webp" alt="Figura coleccionable Funko de Pidgeotto">
+                </picture>
+                <div class="card-item__content">
+                  <p class="card-item__license">POKEMON</p>
+                  <h4 class="card-item__name">PIDGEOTTO</h4>
+                  <p class="card-item__price">$1799,99.-</p>
+                  <p class="card-item__promo">3 CUOTAS SIN INTERÉS</p>
+                </div>
+              </a>
+            </article>
+          </li>
+          <li class="slider__item">
+            <article class="card-item">
+              <a class="card-item__link" href="./pages/shop/item.html">
+                <picture class="card-item__cover">
+                  <span class="card-item__tag">Nuevo</span>
+                  <img src="../../img/harry-potter/luna-1.webp" alt="Figura coleccionable Funko de Luna Lovegood">
+                </picture>
+                <div class="card-item__content">
+                  <p class="card-item__license">HARRY POTTER</p>
+                  <h4 class="card-item__name">LUNA LOVEGOOD LION MASK</h4>
+                  <p class="card-item__price">$1799,99.-</p>
+                  <p class="card-item__promo">3 CUOTAS SIN INTERÉS</p>
+                </div>
+              </a>
+            </article>
+          </li>
+        </ul>
+      </section>
+    </div>
     <!-- CAMBIADOR PAGINAS -->
-    <section class="pagination-container">
-      <ul class="pagination">
-        <a href="#">&laquo;</a>
+    <section class="page-container">
+      <ul class="page">
+        <a class="page-scroller" href="#">&laquo;</a>
         <a href="#">1</a>
         <a href="#">2</a>
         <a href="#">3</a>
         <a href="#">4</a>
         <a href="#">5</a>
-        <a href="#">&raquo;</a>
+        <a class="page-scroller" href="#">&raquo;</a>
       </ul>
       <!-- </div> -->
     </section>

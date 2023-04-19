@@ -362,3 +362,114 @@ header {
     opacity: 1;
   }
 }
+
+/* SHOP PAGE */
+
+.collection-shop {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  padding: var(--spacing-16) 0;
+}
+
+.main-container {
+  display: flex;
+}
+
+.aside {
+  margin: var(--spacing-68) auto;
+  padding-right: var(--spacing-12);
+}
+
+.aside-title {
+  font-size: var(--font-large);
+  color: var(--dark-solid);
+  font-weight: 500;
+  margin-bottom: var(--spacing-12);
+}
+
+.aside-buscar {
+  width: 24.3rem;
+  font-size: var(--font-medium);
+  border: 2px solid var(--dark-bg-solid);
+  padding: 10px;
+  border-radius: 6px;
+  /* width: max-content; */
+  margin-top: var(--spacing-12);
+  margin-bottom: var(--spacing-28);
+}
+
+.filter-options {
+  display: flex;
+  flex-direction: column;
+}
+
+.filter {
+  display: flex;
+  height: var(--spacing-36);
+  margin: var(--spacing-8 0);
+}
+.filter input {
+  /* ///////////////////////////////// */
+  /* appearance: none; */
+  /* ///////////////////////////////// */
+
+  width: var(--spacing-24);
+  height: var(--spacing-24);
+  align-self: center;
+  border: 2px solid var(--dark-bg-solid);
+  border-radius: 6px;
+}
+
+.filter label {
+  font-weight: 500;
+  font-size: var(--font-medium);
+  align-self: center;
+  margin-left: var(--spacing-8);
+}
+
+.precio-container {
+  display: flex;
+  margin-bottom: var(--spacing-28);
+  justify-content: space-between;
+}
+
+.precio-box {
+  width: 5rem;
+  height: var(--spacing-24);
+  font-size: var(--font-medium);
+  border: 2px solid var(--dark-bg-solid);
+  border-radius: 6px;
+}
+
+.precio-label {
+  font-size: var(--font-small);
+  font-weight: 500;
+  margin-right: var(--spacing-16);
+}
+
+.page-container {
+  display: inline-block;
+  margin-bottom: var(--spacing-68);
+}
+
+.page a {
+  float: left;
+  color: var(--dark-solid);
+  font-weight: 900;
+  font-size: var(--font-small);
+  border: solid 1px #bec3cc;
+  padding: 8px 16px;
+  margin: 4px;
+  border-radius: 4px;
+}
+
+.page a.active {
+  background-color: rgb(245, 245, 245);
+  color: var(--prymary-solid);
+}
+
+.page-scroller {
+  background-color: rgb(145, 158, 171, 0.5);
+  color: #c4cdd5;
+}
