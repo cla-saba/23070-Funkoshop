@@ -279,7 +279,7 @@ header {
 
 .slider__items {
   display: flex;
-  gap: var(--spacing-24);
+  gap: var(--spacing-36);
 }
 
 .card-item__cover {
@@ -394,7 +394,6 @@ header {
   border: 2px solid var(--dark-bg-solid);
   padding: 10px;
   border-radius: 6px;
-  /* width: max-content; */
   margin-top: var(--spacing-12);
   margin-bottom: var(--spacing-28);
 }
@@ -412,6 +411,7 @@ header {
 .filter input {
   /* ///////////////////////////////// */
   /* appearance: none; */
+  /* COMO HACER PARA DAR FORMATO A LOS CHECKBOX????? */
   /* ///////////////////////////////// */
 
   width: var(--spacing-24);
@@ -472,4 +472,76 @@ header {
 .page-scroller {
   background-color: rgb(145, 158, 171, 0.5);
   color: #c4cdd5;
+}
+
+/* ITEM */
+
+.relationed-items__title {
+  font-family: var(--alternative-font);
+  font-size: var(--font-display);
+  font-weight: 700;
+}
+
+.item:nth-child(1) .collection__cover {
+  order: -1;
+}
+
+.card-item__name-jumbo {
+  font-size: var(--font-jumbo);
+  font-weight: 700;
+}
+
+.collection__content-item {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-8);
+  align-items: start;
+}
+
+.collection__text-item {
+  font-family: var(--alternative-font);
+  font-size: var(--font-large);
+  font-weight: 400;
+  padding: var(--spacing-8) 0;
+}
+
+.collection__price-item {
+  font-size: var(--font-jumbo);
+  font-weight: 400;
+  padding: var(--spacing-8) 0;
+}
+
+.item__button-to-cart {
+  font-family: var(--alternative-font);
+  font-size: var(--font-medium);
+  font-weight: 400;
+  color: var(--light-font-solid);
+  background-color: var(--prymary-solid);
+  padding: var(--spacing-8) var(--spacing-16);
+  border-style: none;
+  margin-bottom: var(--spacing-20);
+  margin: 0 var(--spacing-24);
+}
+
+.item__button-add-subs {
+  color: var(--light-font-solid);
+  font-size: var(--font-large);
+  width: var(--spacing-36);
+  height: var(--spacing-36);
+  background-color: #4f4f4f;
+  border-style: none;
+}
+
+.item__button-value {
+  color: var(--light-font-solid);
+  font-size: var(--font-large);
+  width: var(--spacing-36);
+  height: var(--spacing-36);
+  border-style: ridge;
+  border-color: #c9c9c9;
+  margin: 0 var(--spacing-12);
+}
+
+.item__button-value::placeholder {
+  color: #747474;
 }

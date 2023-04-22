@@ -49,81 +49,109 @@
   </header>
 
   <main class="container">
-    <section>
+    <!-- <section>
       <picture>
         <img src="../../img/star-wars/baby-yoda-1.webp" alt="baby-yoda">
       </picture>
-      <div>
-        <p>Star Wars</p>
-        <h4>BABY YODA BLUEBALL</h4>
-        <p>Figura coleccionable de Baby Yoda (Grogu) - The Mandalorian Saga, edición limitada.</p>
-        <p>$1799,99.-</p>
-      </div>
-      <form>
-        <input type="button" id="btnSumar" value="+">
-        <p id="msgContador">0</p>
-        <input type="button" id="btnRestar" value="-">
-        <button type="submit">Agregar al Carrito</button>
-      </form>
-      <div>
-        <a href="#medios de pago">Ver métodos de pago</a>
-        <p> - 3 CUOTAS SIN INTERÉS</p>
-      </div>
+      <article>
+        <div>
+          <p>Star Wars</p>
+          <h4>BABY YODA BLUEBALL</h4>
+          <p>Figura coleccionable de Baby Yoda (Grogu) - The Mandalorian Saga, edición limitada.</p>
+          <p>$1799,99.-</p>
+        </div>
+        <form action="" method="post">
+          <button type="button" id="btnSumar">-</button>
+          <input type="text" name="" id="msgContador" placeholder="0">
+          <button type="button" id="btnRestar">+</button>
+          <button type="submit">Agregar al Carrito</button>
+        </form>
+        <p><a href="#medios de pago">Ver métodos de pago</a> - 3 CUOTAS SIN INTERÉS</p>
+      </article>
+    </section> -->
+
+    <section class="collection container item">
+      <article class="collection__content-item">
+        <p class="card-item__license">STAR WARS</p>
+        <p class="card-item__name-jumbo">BABY YODA BLUEBALL</p>
+        <p class="collection__text-item">Figura coleccionable de Baby Yoda (Grogu) - The Mandalorian Saga, edición
+          limitada.</p>
+        <p class="collection__price-item">$1799,99.-</p>
+        <form action="" method="post">
+          <button class="item__button-add-subs" type="button" id="btnRestar">-</button>
+          <input class="item__button-value" type="text" name="" id="msgContador" placeholder="0">
+          <button class="item__button-add-subs" type="button" id="btnSumar">+</button>
+          <button class="item__button-to-cart" type="submit">Agregar al Carrito</button>
+        </form>
+        <p class="card-item__promo"><a href="#medios de pago">Ver métodos de pago</a> - 3 CUOTAS SIN INTERÉS</p>
+
+      </article>
+      <picture class="collection__cover">
+        <img src="../../img/star-wars/baby-yoda-1.webp" alt="baby-yoda">
+      </picture>
     </section>
 
+
     <!-- PRODUCTOS RELACIONADOS -->
-    <section>
-      <h3>PRODUCTOS RELACIONADOS</h3>
-      <ul>
-        <li>
-          <article>
-            <a href="../pages/shop/item.html">
-              <p>NUEVO</p>
-              <picture>
-                <img src="../../img/star-wars/trooper-1.webp" alt="Trooper">
+    <section class="slider container">
+      <h3 class="relationed-items__title">PRODUCTOS RELACIONADOS</h3>
+      <ul class="slider__items">
+        <!-- ESTILIZAR BIEN LAS FLECHAS PARA DESLIZAR EL SLIDER -->
+        <a href="#" style="color: red; font-size:50px">&laquo;</a>
+        <!-- <a class="page-scroller" href="#">&laquo;</a> -->
+        <li class="slider__item">
+          <article class="card-item">
+            <a class="card-item__link" href="./item.html">
+              <picture class="card-item__cover">
+                <span class="card-item__tag">Nuevo</span>
+                <img src="../../img/star-wars/trooper-1.webp" alt="Figura coleccionable Funko de Trooper">
               </picture>
-              <div>
-                <p>Star Wars</p>
-                <h4>STORMTROOPER LIGHTSABER</h4>
-                <p>$1799,99.-</p>
-                <p>3 CUOTAS SIN INTERÉS</p>
+              <div class="card-item__content">
+                <p class="card-item__license">Star Wars</p>
+                <h4 class="card-item__name">STORMTROOPER LIGHTSABER</h4>
+                <p class="card-item__price">$1799,99.-</p>
+                <p class="card-item__promo">3 CUOTAS SIN INTERÉS</p>
               </div>
             </a>
           </article>
         </li>
-        <li>
-          <article>
-            <a href="../pages/shop/item.html">
-              <p>NUEVO</p>
-              <picture>
-                <img src="../../img/pokemon/pidgeotto-1.webp" alt="pidgeotto">
+        <li class="slider__item">
+          <article class="card-item">
+            <a class="card-item__link" href="./item.html">
+              <picture class="card-item__cover">
+                <span class="card-item__tag">Nuevo</span>
+                <img src="../../img/pokemon/pidgeotto-1.webp" alt="Figura coleccionable Funko de Pidgeotto">
               </picture>
-              <div>
-                <p>POKEMON</p>
-                <h4>PIDGEOTTO</h4>
-                <p>$1799,99.-</p>
-                <p>3 CUOTAS SIN INTERÉS</p>
+              <div class="card-item__content">
+                <p class="card-item__license">POKEMON</p>
+                <h4 class="card-item__name">PIDGEOTTO</h4>
+                <p class="card-item__price">$1799,99.-</p>
+                <p class="card-item__promo">3 CUOTAS SIN INTERÉS</p>
               </div>
             </a>
           </article>
         </li>
-        <li>
-          <article>
-            <a href="../pages/shop/item.html">
-              <p>NUEVO</p>
-              <picture>
-                <img src="../../img/harry-potter/luna-1.webp" alt="luna">
+        <li class="slider__item">
+          <article class="card-item">
+            <a class="card-item__link" href="./item.html">
+              <picture class="card-item__cover">
+                <span class="card-item__tag">Nuevo</span>
+                <img src="../../img/harry-potter/luna-1.webp" alt="Figura coleccionable Funko de Luna Lovegood">
               </picture>
-              <div>
-                <p>HARRY POTTER</p>
-                <h4>LUNA LOVEGOOD LION MASK</h4>
-                <p>$1799,99.-</p>
-                <p>3 CUOTAS SIN INTERÉS</p>
+              <div class="card-item__content">
+                <p class="card-item__license">HARRY POTTER</p>
+                <h4 class="card-item__name">LUNA LOVEGOOD LION MASK</h4>
+                <p class="card-item__price">$1799,99.-</p>
+                <p class="card-item__promo">3 CUOTAS SIN INTERÉS</p>
               </div>
             </a>
           </article>
         </li>
+        <!-- ESTILIZAR BIEN LAS FLECHAS PARA DESLIZAR EL SLIDER -->
+        <a style="color: red; font-size:50px" href="#">&raquo;</a>
+        <!-- <a class="page-scroller" href="#">&raquo;</a> -->
       </ul>
+
     </section>
   </main>
 
